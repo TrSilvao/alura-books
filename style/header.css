@@ -66,6 +66,10 @@
     display: none;
 }
 
+.conteiner__botao-2 {
+    display: none;
+}
+
 @media screen and (min-width: 1024px) {
 
     .conteiner__titulo,
@@ -101,4 +105,16 @@
     .cabeçalho__menu-haburguer {
         display: none;
     }
+
+    .conteiner__botão:checked ~ .lista__menu {
+        display: block;
+
+    }
+
+    .conteiner__botão {
+        display: none;
+        width: auto;
+        
+    }
+
 }
