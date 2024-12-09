@@ -88,6 +88,14 @@
     display: none;
 }
 
+.botoes__item-favorito:checked ~ .botoes__item-favorito-favoritado > .botao__favorito {
+    display: none;
+}
+
+.botoes__item-favorito:checked ~ .botoes__item-favorito-favoritado > .botao__favoritado {
+    display: block;
+}
+
 @media screen and (min-width: 1024px) {
 
     .carrossel__titulo {
@@ -116,15 +124,6 @@
         width: 40%;
         margin: 2em auto;
     }
-
-    .botoes__item-favorito:checked ~ .botoes__item-favorito-favoritado > .botao__favorito {
-        display: none;
-    }
-
-    .botoes__item-favorito:checked ~ .botoes__item-favorito-favoritado > .botao__favoritado {
-        display: block;
-    }
-
 }
 
 @media screen and (min-width: 1728px) {
