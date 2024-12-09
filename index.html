@@ -20,7 +20,7 @@
 
             <input type="checkbox" id="menu" class="conteiner__botao">
             
-            <label for="menu">
+            <label for="menu" class="conteiner__rotulo">
 
                 <samp class="cabeçalho__menu-haburguer conteiner__img" ></samp>
 
@@ -65,7 +65,7 @@
 
             <input type="checkbox" id="opçoes-menu" class="conteiner__botão">
 
-            <label for="opçoes-menu">
+            <label for="opçoes-menu" class="opçoes__rotulo">
 
                 <li class="opçoes__item">Categoria</li>
 
@@ -105,19 +105,43 @@
 
             </ul>
 
-            <li class="opçoes__item"><a href="#" class="opçoes__link">Favoritos</a></li>
+            <li class="opçoes__item">
+                
+                <a href="#" class="opçoes__link">Favoritos</a>
 
-            <li class="opçoes__item"><a href="#" class="opçoes__link">Minha Estante   </a></li>
+            </li>
+
+            <li class="opçoes__item">              
+                
+                <a href="#" class="opçoes__link">Minha Estante</a>
+        
+            </li>
 
         </ul>
         
         <div class="conteiner">
 
-            <a href="#"><img src="assets/Favoritos.svg" alt="icone de Favoritos" class="conteiner__img conteiner__img-transparente"></a>
+            <a href="#">
 
-            <a href="#"><img src="assets/Compras.svg" alt="icone da sacola de compras" class="conteiner__img"></a>
-    
-            <a href="#"><img src="assets/Usuário.svg" alt="icone do Usuário" class="conteiner__img"></a>    
+                <img src="assets/Favoritos.svg" alt="icone de Favoritos" class="conteiner__img conteiner__img-transparente">
+            
+            </a>
+
+            <a href="#" class="conteiner__link">
+
+                <img src="assets/Compras.svg" alt="icone da sacola de compras" class="conteiner__img">
+
+                <p class="conteiner__paragrafo">Minha sacola</p>
+
+            </a>
+       
+            <a href="#" class="conteiner__link">
+                
+                <img src="assets/Usuário.svg" alt="icone do Usuário" class="conteiner__img">
+
+                <p class="conteiner__paragrafo">Meu Perfil</p>
+            
+            </a>                
 
         </div>
         
@@ -137,58 +161,74 @@
 
         <h2 class="carrossel__titulo">ÚLTIMOS LANÇAMENTOS</h2>
 
-        <!-- Slider main container -->
-        <div class="swiper">            
+        <div class="carrossel__conteudo">
+
+            <!-- Slider main container -->
+            <div class="swiper">            
                 <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->                
-                <div class="swiper-slide"><img src="assets/Gestão.svg" alt="Livro sobre Gestão"></div>
-                <div class="swiper-slide"><img src="assets/Javascript.svg" alt="Livro sobre Javascript"></div>
-                <div class="swiper-slide"><img src="assets/Liderança.svg" alt="Livro sobre Liderança"></div>
-                <div class="swiper-slide"><img src="assets/ReactNative.svg" alt="Livro sobre ReactNative"></div>
-                <div class="swiper-slide"><img src="assets/Tuning.svg" alt="Livro sobre Tuning"></div>
-                <div class="swiper-slide"><img src="assets/ApacheKafka.svg" alt="Livro sobre ApacheKafka"></div>
-                <div class="swiper-slide"><img src="assets/Arquitetura.svg" alt="Livro sobre Arquitetura"></div>
-            </div>
-          
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          
-        </div>
-
-        <div class="card">
-
-            <div class="card__descrição">
-
-                <div class="descrição">
-
-                    <h3 class="descriçao__titulo">Talvez você também se interesse por...</h3>
-
-                    <h2 class="descriçao__titulo-livro">Angular 11 e Firebase</h2>
-
-                    <p class="descriçao__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
-
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->                
+                    <div class="swiper-slide"><img src="assets/Gestão.svg" alt="Livro sobre Gestão"></div>
+                    <div class="swiper-slide"><img src="assets/Javascript.svg" alt="Livro sobre Javascript"></div>
+                    <div class="swiper-slide"><img src="assets/Liderança.svg" alt="Livro sobre Liderança"></div>
+                    <div class="swiper-slide"><img src="assets/ReactNative.svg" alt="Livro sobre ReactNative"></div>
+                    <div class="swiper-slide"><img src="assets/Tuning.svg" alt="Livro sobre Tuning"></div>
+                    <div class="swiper-slide"><img src="assets/ApacheKafka.svg" alt="Livro sobre ApacheKafka"></div>
+                    <div class="swiper-slide"><img src="assets/Arquitetura.svg" alt="Livro sobre Arquitetura"></div>
                 </div>
-
-                <img src="assets/Angular.svg" alt="Uma letra grande">
-
+        
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+        
             </div>
 
-            <div class="card__botoes">
+            <div class="card">
 
-                <ol class="botoes">
+                <div class="card__descrição">
+    
+                    <div class="descrição">
+    
+                        <h3 class="descriçao__titulo">Talvez você também se interesse por...</h3>
+    
+                        <h2 class="descriçao__titulo-livro">Angular 11 e Firebase</h2>
+    
+                        <p class="descriçao__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+    
+                    </div>
+    
+                    <img src="assets/Angular.svg" alt="Uma letra grande" class="card__img">
+    
+                </div>
+    
+                <div class="card__botoes">
+    
+                    <ul class="botoes">
+    
+                        <li class="botoes__item">
 
-                    <li class="botoes__item"><img src="assets/Favoritos.svg" alt="Icone de favoritos"></li>
+                            <input type="checkbox" id="favoritos" class="botoes__item-favorito">
+            
+                            <label for="favoritos" class="botoes__item-favorito-favoritado">
+                
+                                <img src="assets/Favoritos.svg" alt="Icone de favoritos" class="botao__favorito">
 
-                    <li class="botoes__item"><img src="assets/Compras.svg" alt="Icone da sacola de compras"></li>
-
-                </ol>
-
-                <a href="#" class="botoes__ancora">Saiba mais</a>
-
+                                <img src="assets/Favoritos clicado.png" alt="Icone de favoritos" class="botao__favoritado">    
+                
+                            </label>
+                           
+                        </li>
+    
+                        <li class="botoes__item"><img src="assets/Compras.svg" alt="Icone da sacola de compras"></li>
+    
+                    </ul>
+    
+                    <a href="#" class="botoes__ancora">Saiba mais</a>
+    
+                </div>
+    
             </div>
 
         </div>
@@ -199,63 +239,79 @@
 
         <h2 class="carrossel__titulo">MAIS VENDIDOS</h2>
 
-        <!-- Slider main container -->
-        <div class="swiper">            
+        <div class="carrossel__conteudo">
+
+            <!-- Slider main container -->
+            <div class="swiper">            
                 <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->                
-                <div class="swiper-slide"><img src="assets/Gestão2.svg" alt="Livro sobre Gestão2"></div>
-                <div class="swiper-slide"><img src="assets/UX.svg" alt="Livro sobre ux"></div>
-                <div class="swiper-slide"><img src="assets/Construct2.svg" alt="Livro sobre Construct2"></div>
-                <div class="swiper-slide"><img src="assets/ReactNative.svg" alt="Livro sobre ReactNative"></div>
-                <div class="swiper-slide"><img src="assets/Tuning.svg" alt="Livro sobre Tuning"></div>
-                <div class="swiper-slide"><img src="assets/ApacheKafka.svg" alt="Livro sobre ApacheKafka"></div>
-                <div class="swiper-slide"><img src="assets/Arquitetura.svg" alt="Livro sobre Arquitetura"></div>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->                
+                    <div class="swiper-slide"><img src="assets/Gestão2.svg" alt="Livro sobre Gestão2"></div>
+                    <div class="swiper-slide"><img src="assets/UX.svg" alt="Livro sobre ux"></div>
+                    <div class="swiper-slide"><img src="assets/Construct2.svg" alt="Livro sobre Construct2"></div>
+                    <div class="swiper-slide"><img src="assets/ReactNative.svg" alt="Livro sobre ReactNative"></div>
+                    <div class="swiper-slide"><img src="assets/Tuning.svg" alt="Livro sobre Tuning"></div>
+                    <div class="swiper-slide"><img src="assets/ApacheKafka.svg" alt="Livro sobre ApacheKafka"></div>
+                    <div class="swiper-slide"><img src="assets/Arquitetura.svg" alt="Livro sobre Arquitetura"></div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
             </div>
-          
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          
-        </div>
 
-        <div class="card">
+            <div class="card">
 
-            <div class="card__descrição">
+                <div class="card__descrição">
 
-                <div class="descrição">
+                    <div class="descrição">
 
-                    <img class="descriçao__estrelinhas" src="assets/Estrelinhas.svg" alt="5 estrerlas">
+                        <img class="descriçao__estrelinhas" src="assets/Estrelinhas.svg" alt="5 estrerlas">
 
-                    <h3 class="descriçao__titulo">Autora do Mês</h3>
+                        <h3 class="descriçao__titulo">Autora do Mês</h3>
 
-                    <h2 class="descriçao__titulo-livro">Juliana Agarikov</h2>
+                        <h2 class="descriçao__titulo-livro">Juliana Agarikov</h2>
 
-                    <p class="descriçao__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End. </p>
+                        <p class="descriçao__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End. </p>
+
+                    </div>
+
+                    <img src="assets/Perfil-escritora 1.svg" alt="Uma Mulher negra de nome Juliana." class="card__img">
 
                 </div>
 
-                <img src="assets/Perfil-escritora 1.svg" alt="Uma Mulher negra de nome Juliana.">
+                <div class="card__botoes">
+
+                    <ol class="botoes">
+    
+                        <li class="botoes__item">
+
+                            <input type="checkbox" id="favoritos2" class="botoes__item-favorito">
+            
+                            <label for="favoritos2" class="botoes__item-favorito-favoritado">
+                
+                                <img src="assets/Favoritos.svg" alt="Icone de favoritos" class="botao__favorito">
+
+                                <img src="assets/Favoritos clicado.png" alt="Icone de favoritos" class="botao__favoritado">    
+                
+                            </label>
+                           
+                        </li>
+    
+                        <li class="botoes__item"><img src="assets/Compras.svg" alt="Icone da sacola de compras"></li>
+    
+                    </ol>
+
+                    <a href="#" class="botoes__ancora">Saiba mais</a>
+
+                </div>
 
             </div>
 
-            <div class="card__botoes">
-
-                <ol class="botoes">
-
-                    <li class="botoes__item"><img src="assets/Favoritos.svg" alt="Icone de favoritos"></li>
-
-                    <li class="botoes__item"><img src="assets/Compras.svg" alt="Icone da sacola de compras"></li>
-
-                </ol>
-
-                <a href="#" class="botoes__ancora">Saiba mais</a>
-
-            </div>
-
-        </div>
+        </div>        
 
     </section>
 
